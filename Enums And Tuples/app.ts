@@ -95,3 +95,148 @@ let username2:string=<string>name1
 // console.log(typeof(name1));
 console.log(name1);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// hello world
+let start:string="Hello world";
+console.log(start);
+
+
+/*   IMPLICT (INFER) */
+
+let user="mughees";
+// decided type automatically in which you written first
+
+// user=2
+// gives error
+
+let num=2
+// num="mughees"
+// error
+
+/*   EXPLICT  */
+
+let user2:string="mutahir";
+
+let num2:number=16;
+
+let isOff:boolean=true;
+
+//you define type 
+
+function greet(userName:string):void{
+
+    console.log(`Welcome ${userName}`);
+    
+}
+
+greet(user2)
+
+
+function makeGreeting(userName:string,msg:string):string{
+
+    return `${msg} ${userName}`
+}
+
+let greetingMsg=makeGreeting("Mughees","How are you");
+console.log(greetingMsg);
+
+//modules
+//Instructions
+// 1. add type="module" in script tag
+// 2. modify tsconfig.json and change target and module properties to ESNext
+// 3. run with live server
+
+
+
+// import Sum from "./utils/sum.js";
+// // import default item we you declare as default must wirtten without {}
+
+
+// import { userName,age,isStudent } from "./utils/sum.js";
+// // import only which you written
+
+
+// import * as info from "./utils/sum.js"
+// // import all things form sum.js file
+
+// import {car as myCar} from "./utils/sum.js"
+// // it changes name from car to myCar
+
+
+
+// let car={
+//     name:"HAVAL",
+//     module:"2024"
+// }
+
+// console.log(car,myCar);
+
+// let count=Sum(90,1);
+// console.log(count);
+
+
+// console.log(userName,age,isStudent);
+
+// console.log(info);
+
+
+
+
+//utils
+// export default function Sum(number1:number,number2:number):number{
+//     return number1+number2
+// }
+
+// export let userName:string="mughees";
+
+
+// export let age:number=18;
+
+
+// export let isStudent:boolean=true;
+
+
+// export let car={
+//     name:"Fortuner",
+//     model:"2022"
+}
+
+
